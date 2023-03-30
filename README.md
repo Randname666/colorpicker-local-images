@@ -10,6 +10,14 @@ Copyright © 2011-2019 Martijn W. van der Lee.
 Most images from jPicker by Christopher T. Tillman.
 Sourcecode created from scratch by Martijn W. van der Lee.
 
+Why this fork is created ?
+--------
+The original `jquery.colorpicker.css` finds images according to where the HTML that references to it is located, which fails if it's not placed at the same folder of the HTML.
+
+This fork finds images according to where `jquery.colorpicker.css` itself is located, a tiny bit of change, but makes it more suitable to be used as a plugin in a framework which HTMLs and colorpicker are located at different location, e.g. `~/web/example/example.html` and `~/framework/plugins/jquery.colorpicker.js`.
+
+This fork is not likely to be actively maintained.
+
 Features
 --------
 -	jQueryUI (themeroller-based) look & feel
@@ -135,7 +143,7 @@ class specified.
 If a `buttonImage` is specified, change the background color of the
 image when the color is changed.
 
-###	buttonImage ('images/ui-colorpicker.png')
+###	buttonImage ('tui-colorpicker.png')
 Same as jQueryUI DatePicker.
 
 ###	buttonImageOnly (false)
